@@ -1,0 +1,8 @@
+### Consultar resumo
+GET http://localhost:8080/api/focos/1/resumo
+
+### Gerar alerta
+POST http://localhost:8080/api/focos/1/gerar-alerta
+
+### Processar pendentes
+POST http://localhost:8080/api/focos/processar-pendentes
