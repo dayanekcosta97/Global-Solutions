@@ -1,0 +1,10 @@
+digraph DER {
+  graph [rankdir=LR, bgcolor="white", pad="0.3", nodesep="0.65", ranksep="0.9", fontname="Arial"];
+  node [shape=record, style="rounded,filled", fontname="Arial", fontsize=11, fillcolor="#F4F7FB", color="#1746A2", fontcolor="#20314D", penwidth=1.5, margin="0.17,0.12"];
+  edge [color="#1746A2", penwidth=1.4, arrowsize=0.7, fontname="Arial", fontsize=10];
+  categoria [label="{ CATEGORIA | id NUMBER (PK)\lnome VARCHAR2(100) (UQ)\lativo CHAR(1)\l }"];
+  ocorrencia [label="{ OCORRENCIA | id NUMBER (PK)\lprotocolo VARCHAR2(32) (UQ)\lcategoria_id NUMBER (FK)\lendereco VARCHAR2(200)\lbairro VARCHAR2(100)\ldescricao VARCHAR2(1000)\lstatus VARCHAR2(20)\lcriado_em TIMESTAMP\latualizado_em TIMESTAMP\l }"];
+  historico [label="{ HISTORICO_STATUS | id NUMBER (PK)\locorrencia_id NUMBER (FK)\lstatus_anterior VARCHAR2(20)\lstatus_novo VARCHAR2(20)\lobservacao VARCHAR2(500)\lregistrado_em TIMESTAMP\l }"];
+  categoria -> ocorrencia [label="1 : N"];
+  ocorrencia -> historico [label="1 : N"];
+}

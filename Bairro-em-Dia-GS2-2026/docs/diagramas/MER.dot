@@ -1,0 +1,10 @@
+digraph MER {
+  graph [rankdir=LR, bgcolor="white", pad="0.4", nodesep="0.85", ranksep="1", fontname="Arial"];
+  node [shape=box, style="rounded,filled", fontname="Arial", fontsize=14, fillcolor="#EAF1FF", color="#1746A2", fontcolor="#20314D", penwidth=1.8, margin="0.24,0.2"];
+  edge [color="#1746A2", penwidth=1.6, fontname="Arial", fontsize=11];
+  categoria [label="CATEGORIA\nClassifica o problema"];
+  ocorrencia [label="OCORRÊNCIA\nRegistro e situação"];
+  historico [label="HISTÓRICO DE STATUS\nEvolução do atendimento"];
+  categoria -> ocorrencia [label="  1 : 0..N\nclassifica  "];
+  ocorrencia -> historico [label="  1 : 1..N\npossui  "];
+}

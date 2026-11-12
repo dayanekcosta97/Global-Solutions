@@ -1,0 +1,23 @@
+Evidência textual informada pela estudante em 09/11/2026; não é captura de tela.
+
+PS C:\Users\dayan\Documents\FIAP\bairro-em-dia> npm.cmd test
+
+> bairro-em-dia@1.0.0 test
+> node --test tests/*.test.mjs
+
+✔ catálogo contém cinco categorias e quatro status (1.2661ms)
+✔ validação rejeita categoria e campos obrigatórios em branco (0.5435ms)
+✔ validação aceita entrada válida (0.1071ms)
+✔ registro fornece protocolo, status e evento inicial (0.3803ms)
+✔ protocolo avança sem duplicação dentro do mesmo ano (0.151ms)
+✔ fluxo completo respeita sequenciamento e registra histórico (0.1392ms)
+✔ indicadores agrupam registros e resoluções (0.1802ms)
+✔ dados demonstrativos são reproduzíveis e consistentes (0.2052ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 73.6425

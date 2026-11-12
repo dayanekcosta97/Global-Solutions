@@ -1,0 +1,34 @@
+ORACLE FREESQL - Execução informada pela estudante em 09/11/2026
+
+01_estrutura.sql
+- CATEGORIA, OCORRENCIA e HISTORICO_STATUS: tabelas criadas.
+- IDX_OCORRENCIA_STATUS, IDX_OCORRENCIA_CATEGORIA,
+  IDX_HISTORICO_OCORRENCIA: índices criados.
+- SEQ_PROTOCOLO: sequência criada.
+- Categorias: 5 linhas inseridas; COMMIT complete.
+
+02_automacao.sql
+- TRG_HISTORICO_STATUS: compiled.
+- PR_REGISTRAR_OCORRENCIA: compiled.
+- PR_AVANCAR_STATUS: compiled.
+- PR_INDICADORES: compiled.
+
+03_testes.sql
+Novo protocolo: BED-2026-000001
+Buracos e vias: total=0, resolvidas=0
+Calçadas e acessibilidade: total=0, resolvidas=0
+Iluminação pública: total=1, resolvidas=1
+Lixo e limpeza: total=0, resolvidas=0
+Água e vazamentos: total=0, resolvidas=0
+TESTE PASSOU: registro, transições, histórico e indicadores.
+PL/SQL procedure successfully completed.
+
+USER_OBJECTS (captura anexada)
+PR_AVANCAR_STATUS       PROCEDURE    VALID
+PR_INDICADORES          PROCEDURE    VALID
+PR_REGISTRAR_OCORRENCIA PROCEDURE    VALID
+TRG_HISTORICO_STATUS    TRIGGER      VALID
+
+Observação: texto consolidado das saídas compartilhadas pela estudante.
+A imagem 13 apresenta o resultado de USER_OBJECTS.
+Não há integração Oracle-Expo nesta versão.

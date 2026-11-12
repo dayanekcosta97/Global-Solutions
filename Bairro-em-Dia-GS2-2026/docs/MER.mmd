@@ -1,0 +1,25 @@
+erDiagram
+    CATEGORIA ||--o{ OCORRENCIA : classifica
+    OCORRENCIA ||--|{ HISTORICO_STATUS : possui
+    CATEGORIA {
+      int id
+      string nome
+      boolean ativo
+    }
+    OCORRENCIA {
+      int id
+      string protocolo
+      int categoria_id
+      string endereco
+      string bairro
+      string descricao
+      string status
+      datetime criado_em
+    }
+    HISTORICO_STATUS {
+      int id
+      int ocorrencia_id
+      string status_anterior
+      string status_novo
+      datetime registrado_em
+    }

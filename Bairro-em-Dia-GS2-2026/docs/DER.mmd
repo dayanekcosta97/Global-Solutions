@@ -1,0 +1,27 @@
+erDiagram
+    CATEGORIA ||--o{ OCORRENCIA : FK_categoria_id
+    OCORRENCIA ||--o{ HISTORICO_STATUS : FK_ocorrencia_id
+    CATEGORIA {
+      NUMBER id PK
+      VARCHAR2_100 nome UK
+      CHAR_1 ativo
+    }
+    OCORRENCIA {
+      NUMBER id PK
+      VARCHAR2_32 protocolo UK
+      NUMBER categoria_id FK
+      VARCHAR2_200 endereco
+      VARCHAR2_100 bairro
+      VARCHAR2_1000 descricao
+      VARCHAR2_20 status
+      TIMESTAMP criado_em
+      TIMESTAMP atualizado_em
+    }
+    HISTORICO_STATUS {
+      NUMBER id PK
+      NUMBER ocorrencia_id FK
+      VARCHAR2_20 status_anterior
+      VARCHAR2_20 status_novo
+      VARCHAR2_500 observacao
+      TIMESTAMP registrado_em
+    }

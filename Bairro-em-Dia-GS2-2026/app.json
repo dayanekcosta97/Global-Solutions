@@ -1,0 +1,18 @@
+{
+  "expo": {
+    "name": "Bairro em Dia",
+    "slug": "bairro-em-dia",
+    "scheme": "bairroemdia",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#F4F7FB",
+    "newArchEnabled": true,
+    "platforms": ["ios", "android", "web"],
+    "web": {
+      "name": "Bairro em Dia",
+      "shortName": "Bairro em Dia",
+      "bundler": "metro"
+    }
+  }
+}
